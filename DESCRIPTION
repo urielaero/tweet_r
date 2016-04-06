@@ -9,4 +9,5 @@ LazyData: true
 Imports:
     ROAuth,
     RCurl,
-    rmongodb
+    rmongodb,
+    leaflet

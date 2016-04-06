@@ -21,3 +21,10 @@ sort_by_favorite <- function(data, DESC=FALSE) {
 filter_by_retweet <- function(data, isRetweet=FALSE) {
     filter_data(data, data$isRetweet == isRetweet)
 }
+
+# show map
+show_tweets_map <-function() {
+    #t <- twitter::find_data(limit=100, db_collection="tweetr.tweets")
+    t <- twitter::get_tweets_df("playa", 20, geocode="21.13,-86.83,9mi")
+    twitter::drawMap(t)
+}

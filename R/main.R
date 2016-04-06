@@ -1,6 +1,6 @@
-save_tweets <- function(query="#R", limit=5) {
+save_tweets <- function(query="#R", limit=5, geocode=NULL) {
     register_mongo_backend()
-    tweets = get_tweets_df(query, limit)
+    tweets = get_tweets_df(query, limit, geocode=geocode)
     insert_from_df(tweets, "tweetr.tweets")
 }
 
