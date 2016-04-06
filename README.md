@@ -28,3 +28,5 @@
 ## remove retweets
 ### filter_by_retweet(d)
 
+## show leaflet example
+### show_tweets_map()
